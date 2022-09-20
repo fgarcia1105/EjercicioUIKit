@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="E42-Vs-3ZJ">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="Uev-gG-JIm" customClass="SignUpViewController" customModule="Tech_Talk_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mKs-Z2-GEo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="249" image="SignUpHeader" translatesAutoresizingMaskIntoConstraints="NO" id="9Iz-7X-ehC" userLabel="Header">
+                                <rect key="frame" x="0.0" y="64" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="4jE-hq-oaa"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ixU-tK-pbe">
+                                <rect key="frame" x="46" y="410.5" width="322" height="172"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNd-dA-fNZ" customClass="PrimaryTextField" customModule="Tech_Talk_Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="QkP-39-Sdb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElF-WV-bCE" customClass="PrimaryTextField" customModule="Tech_Talk_Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="322" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="4PR-Re-Mw8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdE-K8-gdT" customClass="PrimaryTextField" customModule="Tech_Talk_Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="128" width="322" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="jFN-I7-Wqq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VO-Fy-0Pg" userLabel="LabelHeader">
+                                <rect key="frame" x="46" y="294" width="322" height="76.5"/>
+                                <string key="text">Hey,
+Register Now!</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="T12-RS-QmY">
+                                <rect key="frame" x="99.5" y="811.5" width="215" height="34.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joined us before?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIU-eA-b9R">
+                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="34.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzm-DX-QQn">
+                                        <rect key="frame" x="135.5" y="0.0" width="79.5" height="34.5"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapSignIn:" destination="Uev-gG-JIm" eventType="touchUpInside" id="POW-Ga-Mqg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17G-rm-lrd" customClass="PrimaryButton" customModule="Tech_Talk_Demo" customModuleProvider="target">
+                                <rect key="frame" x="46" y="707" width="322" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HwL-Oe-PE3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="didTapSignUp:" destination="Uev-gG-JIm" eventType="touchUpInside" id="AX7-p6-wi1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tm0-iy-MKn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tm0-iy-MKn" firstAttribute="trailing" secondItem="9Iz-7X-ehC" secondAttribute="trailing" id="5Tu-mk-c2t"/>
+                            <constraint firstItem="T12-RS-QmY" firstAttribute="top" secondItem="17G-rm-lrd" secondAttribute="bottom" constant="34.5" id="5W8-ww-kzU"/>
+                            <constraint firstItem="Tm0-iy-MKn" firstAttribute="trailing" secondItem="ixU-tK-pbe" secondAttribute="trailing" constant="46" id="Brz-VP-3nL"/>
+                            <constraint firstItem="17G-rm-lrd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ixU-tK-pbe" secondAttribute="bottom" constant="20" id="CZY-b1-WZz"/>
+                            <constraint firstItem="ixU-tK-pbe" firstAttribute="leading" secondItem="Tm0-iy-MKn" secondAttribute="leading" constant="46" id="Gyu-u2-bkL"/>
+                            <constraint firstItem="5VO-Fy-0Pg" firstAttribute="leading" secondItem="Tm0-iy-MKn" secondAttribute="leading" constant="46" id="WM6-je-95b"/>
+                            <constraint firstItem="5VO-Fy-0Pg" firstAttribute="top" secondItem="9Iz-7X-ehC" secondAttribute="bottom" constant="30" id="Xcq-SA-LCk"/>
+                            <constraint firstItem="ixU-tK-pbe" firstAttribute="top" secondItem="5VO-Fy-0Pg" secondAttribute="bottom" constant="40" id="Yub-UN-OsC"/>
+                            <constraint firstItem="T12-RS-QmY" firstAttribute="centerX" secondItem="mKs-Z2-GEo" secondAttribute="centerX" id="ZCU-EY-uWG"/>
+                            <constraint firstItem="Tm0-iy-MKn" firstAttribute="trailing" secondItem="5VO-Fy-0Pg" secondAttribute="trailing" constant="46" id="gTB-Rl-RRi"/>
+                            <constraint firstItem="9Iz-7X-ehC" firstAttribute="top" secondItem="Tm0-iy-MKn" secondAttribute="top" constant="20" id="hFx-Ki-URf"/>
+                            <constraint firstItem="17G-rm-lrd" firstAttribute="leading" secondItem="Tm0-iy-MKn" secondAttribute="leading" constant="46" id="ige-jn-54B"/>
+                            <constraint firstItem="9Iz-7X-ehC" firstAttribute="leading" secondItem="Tm0-iy-MKn" secondAttribute="leading" id="jgo-jU-IkA"/>
+                            <constraint firstItem="Tm0-iy-MKn" firstAttribute="bottom" secondItem="T12-RS-QmY" secondAttribute="bottom" constant="16" id="rF0-gp-msf"/>
+                            <constraint firstItem="Tm0-iy-MKn" firstAttribute="trailing" secondItem="17G-rm-lrd" secondAttribute="trailing" constant="46" id="rRT-T7-jqF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8UL-Dd-ULw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="17G-rm-lrd">
+            <size key="intrinsicContentSize" width="73" height="34"/>
+        </designable>
+        <designable name="ElF-WV-bCE">
+            <size key="intrinsicContentSize" width="92.5" height="34"/>
+        </designable>
+        <designable name="gdE-K8-gdT">
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
+        </designable>
+        <designable name="mNd-dA-fNZ">
+            <size key="intrinsicContentSize" width="62.5" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="SignUpHeader" width="881.63116455078125" height="587.6649169921875"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

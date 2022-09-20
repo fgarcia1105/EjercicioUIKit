@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  UIKitApp
+
+  Created by Laura Anguiano on 15/09/22.
+  
+*/
+"welcome.title" = "Travel around the world with just a tap";
+"welcome.description" = "Go explore!";
+"welcome.register.button.title" = "Let's Get Started";
+"welcome.sign.in.button.title" = "Already have an account? Sign In";
+
+"sign.up.title" = "Hey,\nRegister Now!";
+"sign.up.email.placeholder" = "Email";
+"sign.up.full.name.placeholder" = "Full name";
+"sign.up.password.placeholder" = "Password";
+"sign.up.register.button.title" = "Register";
+"sign.up.sign.in.button.title" = "Joined us before? Sign In";
+
+"sign.in.image" = "SignInHeader";
+"sign.in.title" = "Sign In";
+"sign.in.email.placeholder" = "Email";
+"sign.in.password.placeholder" = "Password";
+"sign.in.sign.in.button.title" = "Sign In";
+"sign.in.register.question.button.title" = "New to Workout Companion? ";
+"sign.in.register.button.title" = "Register ";
