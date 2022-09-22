@@ -10,40 +10,39 @@ import UIKit
 final class SignUpViewController: UIViewController {
     
     @IBOutlet weak var lblEMail: UITextField!{
-        didSet{
-            self.lblEMail.delegate = self
-        }
+        didSet{ self.lblEMail.delegate = self }
     }
     
     @IBOutlet weak var lblCName: UITextField!{
-        didSet{
-            self.lblCName.delegate = self
-        }
+        didSet{ self.lblCName.delegate = self }
     }
     
     @IBOutlet weak var lblSsap: UITextField!{
-        didSet{
-            self.lblSsap.delegate = self
-        }
+        didSet{ self.lblSsap.delegate = self }
     }
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        self.setGestures()
     }
-    
+
     
     //MARK: - F U N C T I O N S
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
+    private func setGestures(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
     // MARK: - IBActions
     @IBAction func didTapSignUp(_ sender: Any) {
-        
+        let RCheckVC = RegisterConfirmationViewController()
+        RCheckVC.modalPresentationStyle = .automatic
+        self.present(RCheckVC, animated: true, completion: nil)
     }
     
     @IBAction func didTapSignIn(_ sender: Any) {
