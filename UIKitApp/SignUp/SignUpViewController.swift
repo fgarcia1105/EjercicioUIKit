@@ -9,6 +9,9 @@ import UIKit
 
 final class SignUpViewController: UIViewController {
     
+    @IBOutlet weak var pwdPassword: PrimaryTextField!
+    @IBOutlet weak var fullNameTextField: PrimaryTextField!
+    @IBOutlet weak var emailTextField: PrimaryTextField!
     @IBOutlet weak var lblEMail: UITextField!{
         didSet{ self.lblEMail.delegate = self }
     }
@@ -72,13 +75,41 @@ final class SignUpViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func didTapSignUp(_ sender: Any) {
-        let RCheckVC = RegisterConfirmationViewController()
-        RCheckVC.modalPresentationStyle = .automatic
-        self.present(RCheckVC, animated: true, completion: nil)
+        
+        if validateItems() {
+            let RCheckVC = RegisterConfirmationViewController()
+            RCheckVC.modalPresentationStyle = .automatic
+            self.present(RCheckVC, animated: true, completion: nil)
+        }
     }
     
     @IBAction func didTapSignIn(_ sender: Any) {
         
+    }
+    
+    func showAlert(msg: String) {
+        let alert = UIAlertController(title: "My app", message: msg , preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
+    
+    func validateItems() -> Bool{
+        if emailTextField.text == "" {
+            showAlert(msg: "Ingrese un correo electónico válido")
+            return false
+        }
+        
+        if fullNameTextField.text == "" {
+            showAlert(msg: "Ingrese un Nombre válido")
+            return false
+        }
+        
+        if pwdPassword.text == "" {
+            showAlert(msg: "Ingrese un Password válido")
+            return false
+        }
+        
+        return true
     }
 }
 

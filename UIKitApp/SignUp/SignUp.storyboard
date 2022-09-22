@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -116,9 +116,12 @@ Register Now!</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="mNd-dA-fNZ" id="tk0-KP-V32"/>
+                        <outlet property="fullNameTextField" destination="ElF-WV-bCE" id="e56-s9-PAX"/>
                         <outlet property="lblCName" destination="ElF-WV-bCE" id="J5a-hO-Ogh"/>
                         <outlet property="lblEMail" destination="mNd-dA-fNZ" id="Nsu-9D-R2w"/>
                         <outlet property="lblSsap" destination="gdE-K8-gdT" id="sjI-6o-i3Z"/>
+                        <outlet property="pwdPassword" destination="gdE-K8-gdT" id="0Jp-4j-Z47"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8UL-Dd-ULw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -128,7 +131,7 @@ Register Now!</string>
     </scenes>
     <designables>
         <designable name="17G-rm-lrd">
-            <size key="intrinsicContentSize" width="73" height="34"/>
+            <size key="intrinsicContentSize" width="70" height="34"/>
         </designable>
         <designable name="ElF-WV-bCE">
             <size key="intrinsicContentSize" width="92.5" height="34"/>
