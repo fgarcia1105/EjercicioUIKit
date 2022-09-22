@@ -28,6 +28,8 @@
 		1CAE3B5228D37F0D008E10A3 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5128D37F0D008E10A3 /* CustomColor.swift */; };
 		1CAE3B5428D37F25008E10A3 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5328D37F25008E10A3 /* PrimaryButton.swift */; };
 		1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */; };
+		54350FF328DCFDEA00B30422 /* RegisterConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54350FF128DCFDEA00B30422 /* RegisterConfirmationViewController.swift */; };
+		54350FF428DCFDEA00B30422 /* RegisterConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54350FF228DCFDEA00B30422 /* RegisterConfirmationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		1CAE3B5128D37F0D008E10A3 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		1CAE3B5328D37F25008E10A3 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		54350FF128DCFDEA00B30422 /* RegisterConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterConfirmationViewController.swift; sourceTree = "<group>"; };
+		54350FF228DCFDEA00B30422 /* RegisterConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterConfirmationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		1CAE369C28D2672C008E10A3 /* UIKitApp */ = {
 			isa = PBXGroup;
 			children = (
+				54350FEC28DCFC8A00B30422 /* RegisterConfirmation */,
 				1CAE369D28D2672C008E10A3 /* AppDelegate.swift */,
 				1CAE369F28D2672C008E10A3 /* SceneDelegate.swift */,
 				1CAE36E528D370B1008E10A3 /* Resources */,
@@ -209,6 +214,15 @@
 				1CAE36E828D371BC008E10A3 /* LocalizableKeys.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		54350FEC28DCFC8A00B30422 /* RegisterConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				54350FF128DCFDEA00B30422 /* RegisterConfirmationViewController.swift */,
+				54350FF228DCFDEA00B30422 /* RegisterConfirmationViewController.xib */,
+			);
+			path = RegisterConfirmation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAE36E728D37190008E10A3 /* Localizable.strings in Resources */,
+				54350FF428DCFDEA00B30422 /* RegisterConfirmationViewController.xib in Resources */,
 				1CAE36AA28D26732008E10A3 /* LaunchScreen.storyboard in Resources */,
 				1CAE36A728D26732008E10A3 /* Assets.xcassets in Resources */,
 				1CAE36DB28D2F6C2008E10A3 /* SignUp.storyboard in Resources */,
@@ -351,6 +366,7 @@
 				1CAE36D928D2F657008E10A3 /* SignUpViewController.swift in Sources */,
 				1CAE3B5428D37F25008E10A3 /* PrimaryButton.swift in Sources */,
 				1CAE36E328D3703A008E10A3 /* SignInStyles.swift in Sources */,
+				54350FF328DCFDEA00B30422 /* RegisterConfirmationViewController.swift in Sources */,
 				1CAE36E928D371BC008E10A3 /* LocalizableKeys.swift in Sources */,
 				1CAE36CF28D2F56C008E10A3 /* WelcomeViewController.swift in Sources */,
 				1CAE369E28D2672C008E10A3 /* AppDelegate.swift in Sources */,
