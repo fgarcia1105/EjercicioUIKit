@@ -11,19 +11,19 @@ final class SignUpViewController: UIViewController {
     
      @IBOutlet weak var lblEMail: UITextField!{
          didSet{
-             self.lblMail.delegate = self
+             self.lblEMail.delegate = self
          }
      }
      
      @IBOutlet weak var lblCName: UITextField!{
          didSet{
-             self.lblFName.delegate = self
+             self.lblCName.delegate = self
          }
      }
 
      @IBOutlet weak var lblSsap: UITextField!{
         didSet{
-            self.lblFName.delegate = self
+            self.lblSsap.delegate = self
         }
     }
     
